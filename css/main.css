@@ -1,0 +1,237 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	width:100%;
+	min-width:1260px;
+}
+body {
+	font-family: 'PingFang SC','Hiragino Sans GB','Microsoft Yahei',Helvetica,sans-serif;
+    background: #fff;
+	font-size:16px;
+	width:100%;
+	
+}
+ul,li {
+	list-style-type:none;
+}
+a {
+	text-decoration:none;
+	color:#000;
+}
+h1 , p {
+	font-weight: 200;
+}
+input {
+	border:none;
+	outline:medium;
+	border-radius:4px;
+}
+.box {
+	width:1000px;
+	margin:0 auto;
+}
+.box:after {
+	content: " ";
+	visibility:hidden;
+	clear:both;
+	width:100%;
+}
+.fl {
+	float:left;
+}
+/* 通用导航栏 */
+.nav {
+	height:60px;
+	background:#FFF;
+	line-height:60px;
+	width:100%;
+}
+
+.nav img {
+	display:block;
+	margin-top:10px;
+	height:36px;
+	width:140px;
+	float:left;
+}
+.nav ul {
+	float:right;
+}
+.nav li {
+	float:left;
+}
+.nav li a {
+	display:block;
+	height:56px;
+	padding:0 10px;
+}
+.active a {
+	color:#ef5742;
+	border-bottom:4px solid #ef5742;
+}
+
+.no-box {
+	width:300px;
+	height:50px;
+	background:#FFF;
+	border-radius:6px;
+	line-height:45px;
+	margin:10px 0;
+	
+}
+.no-box input:first-child{
+	width:200px;
+	height:40px;
+	margin-left:20px;
+	
+}
+
+.no-box input:last-child {
+	padding:10px 20px;
+	text-align:center;
+	background:#32b16c;
+	color:#FFF;
+}
+
+/*  通用页脚 */
+.footer {
+	height:194px;
+	background:#32353d;
+	color:#999;
+	font-size:14px;
+	padding-top:30px;
+	position: relative;
+}
+.social-soft {
+	width: 610px;
+	margin: 0 auto;
+	padding-top: 1px;
+}
+
+.social-soft li{
+	float:left;
+	margin-left: 50px;
+	line-height: 40px;
+}
+.wb, .wx {
+	padding-top: 50px;
+	position: relative;
+	text-align: center;
+	
+}
+.wb {
+	background:url(../images/wb_1.png) no-repeat;
+	background-size: 50px 50px;
+}
+.wx {
+	background:url(../images/wx_1.png) no-repeat;
+	background-size: 50px 50px;
+	background-position:20px 0px;
+}
+.wb:hover {
+	background:url(../images/wb.png) no-repeat;
+	background-size: 50px 50px;
+}
+.wx:hover {
+	background:url(../images/wx.png) no-repeat;
+	background-size: 50px 50px;
+	background-position:20px 0px;
+}
+.wb div {
+	left: -30px;
+	background:#d9d9d9 url(../images/weibo.png) no-repeat;
+}
+.wx div {
+	left: -10px;
+	background:#d9d9d9 url(../images/wechat.png) no-repeat;
+}
+
+.social-soft div {
+	display: none;
+	width: 116px;
+	padding-top: 120px;
+	position: absolute;
+	top: -170px;
+	border-radius: 2px; 
+	background-position: 5px 10px;
+	
+}
+.social-soft div:after {
+	content: " ";
+	display: block;
+	width: 40px;
+	height: 20px;
+	background: url(../images/angle.png) no-repeat;
+	position:absolute;
+	bottom: -14px;
+	left: 38px;
+	
+}
+.social-soft li:hover div{
+	display: block;
+}
+.contact {
+	border-left:1px dashed #F5F5F5;
+	padding-left: 50px;
+}
+.contact p:before {
+	content: " ";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background:url(../images/tellphone.png) no-repeat;
+	background-size: cover;
+	margin-right: 8px;
+}
+
+.copyright {
+	width:100%;
+	height:30px;
+	text-align:center;
+	margin-top:50px;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+}
+.copyright a {
+	color:#999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

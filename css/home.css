@@ -1,0 +1,741 @@
+ 
+/* 大屏展示 */
+.container {
+	height:650px;
+	background:linear-gradient(to bottom right,#ff5956,#ff566e,#ff864b 80%);
+	padding-top: 1px
+}
+
+.container .box {
+	width:600px;
+	padding-left:400px;
+	color: #FFF;
+	background:url(../images/leader-bg.png) no-repeat; 
+	background-size:250px 500px;
+	background-position:100px 60px;
+	height:650px;
+	overflow: hidden;
+}
+.title {
+	margin-top:130px;
+	margin-bottom:60px;
+	width: 520px;
+	text-align: justify;
+    text-align-last: justify;
+}
+
+.title h1 {
+	font-size: 70px;
+}
+.title p {
+	font-size: 24px;
+}
+
+.download-code {
+	width: 150px;
+	height: 170px;
+	background: #fff;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 2px;
+	margin-right: 40px;
+	float: left;
+}
+.download-code p {
+	color:#697176;
+}
+
+.download-app {
+	width:300px;
+	float:left;
+	font-size:16px;
+	margin-top:20px;
+}
+
+
+.download-btn a{
+	display:inline-block;
+	border-radius:4px;
+	width:142px;
+	height:50px;
+	
+}
+.download-btn a:first-child{
+	background:#FFF url(../images/ios.png);
+	background-size:cover;
+	margin-right:10px;
+}
+.download-btn a:last-child{
+	background:#FFF url(../images/android.png);
+	background-size:cover;
+}
+
+
+/* 3个篇幅 */
+.special {
+	width:1260px;  /* 解决圆形背景溢出1000px容器 */
+	margin:0 auto;
+	position: relative;
+	
+}
+
+.artcle {
+	background:#FFF;
+	margin-top:50px;
+}
+
+.artcle .box {
+	width:1000px;
+	margin:0 130px;
+}
+.account, .financial, .assets {
+	height:700px;
+	position:relative;
+	
+}
+
+
+#animate {
+	position:absolute;
+	top:0;
+}
+#animate li{
+	float:left;
+	position:absolute;
+}
+
+#animate li:nth-of-type(1) {
+	width:90px;
+	height: 90px;
+	top: 180px;
+	left: 110px;
+}
+#animate li:nth-of-type(2) {
+	width: 40px;
+	height: 40px;
+	left:330px;
+	top:50px;
+}
+
+#animate li:nth-of-type(3) {
+	width: 36px;
+	height: 36px;
+	top: 200px;
+	left: 430px;
+}
+#animate li:nth-of-type(4) {
+	width: 50px;
+	height: 50px;
+	top: 200px;
+	left: 780px;
+}
+#animate li:nth-of-type(5) {
+	width: 100px;
+	height: 100px;
+	top: 50px;
+	left: 880px;
+}
+
+
+.icon3 {
+	width:40px;
+	height:40px;
+	position:absolute;
+	left:908px;
+	top:78px;
+	background:url(../images/icon_s.png);
+	background-size:cover;
+}
+.icon4 {
+	width:40px;
+	height:40px;
+	position:absolute;
+	top:206px;
+	left:130px;
+	background:url(../images/icon_c.png);
+	background-size:cover;
+}
+
+
+.artcle h1 {
+	display: inline;
+	text-align: center;
+	font-size: 40px;
+	color: #FF5956;
+	border-bottom: 2px solid #FF5956;
+}
+
+.account {
+	margin-top:60px;
+	text-align:center;
+}
+.account p {
+	font-size:28px;
+	color:#444;
+	margin-top:30px;
+	
+}
+.account li {
+	display:block;
+	width:33%;
+	float:left;
+	text-align:center;
+}
+.account ul {
+	width:100%;
+}
+.slide-img {
+	height:320px;
+	overflow:hidden;
+	margin-top:60px;
+	
+}
+.slide-img li {
+	position:relative;
+	top:80px;
+	transition:top 0.5s;
+	z-index: 99;
+}
+.slide-img span {
+	display:block;
+	height:400px;
+	width:90%;
+	margin:0 auto;
+	
+}
+.slide-img li:nth-of-type(1) span{
+	background:url(../images/art_1.png);
+	background-size: cover;
+}
+.slide-img li:nth-of-type(2) span{
+	background:url(../images/art_2.png);
+	background-size: cover;
+}
+.slide-img li:nth-of-type(3) span{
+	background:url(../images/art_3.png);
+	background-size: cover;
+}
+
+.slide-img li:hover {
+	top:0px;
+}
+
+.account ul:last-child {
+	height:120px;
+	background:#FFF;
+	position:absolute;
+	bottom:80px;
+	
+}
+.account ul:last-child p{
+	color:#999;
+	font-size:16px;
+}
+h3{
+	margin-top:30px;
+	color: #444;
+    font-size: 20px;
+}
+
+
+
+
+.assets {
+	letter-spacing:1px;
+}
+.assets p, .financial p{
+	font-size:28px;
+	color:#444;
+	margin:20px 0;
+}
+.assets .right-side, .financial .left-side {
+	margin-top: 100px;
+	line-height:26px;
+	font-size:18px;
+}
+.right-side {
+	float: right;
+}
+.left-side {
+	float:left;
+}
+.dashed-circle {
+	display:block;
+	height:500px;
+	position:absolute;
+	top:0px;
+	left:-50px;
+}
+.background-iphone5 {
+	display:block;
+	height:490px;
+	position:absolute;
+	top:50px;
+	left:100px;
+}
+
+
+.right-side  div {
+	color:#444;
+	
+}
+.left-side div {
+	color:#999;
+}
+
+
+/*  理财 */
+
+
+
+.other {
+	width:200px;
+	float:left;
+	border-left:1px solid #eee;
+	padding:0 20px;
+	margin-top:20px;
+	line-height: 20px;
+}
+.other h4{
+    font-size: 18px;
+    color: #444;
+}
+.other p {
+    font-size: 14px;
+    color: #999;
+}
+.other a{
+	height: 26px;
+	padding: 4px 20px;
+	background: #ff5956;
+	color: #FFF;
+	border-radius: 2px;
+}
+
+
+
+
+.solid-circle {
+	position:absolute;
+	right:-90px;
+	top: -20px;
+}
+.bg-iphone6 {
+	position:absolute;
+	height:570px;
+	right:0px;
+}
+
+
+/*  更多功能 */
+
+.gray-box:before {  
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #d2d2e2;
+}
+.gray-box {
+	padding-top:100px;
+	background:#F7F7F7;
+}
+.gray-box .box  {
+	position:relative;
+}
+.gray-box h1 {
+	color:#585f64;
+	width:270px;
+	margin:0 auto;
+	text-align:center;
+}
+.more h1:before {
+	background: #F7F7F7 url(../images/more.png) no-repeat;
+}
+.comment h1:before {
+	background: #F7F7F7 url(../images/com.png) no-repeat;
+}
+.gray-box  h1:before {
+	content: "";
+	display: block;
+	width: 160px;
+	height: 50px;
+	background-size: 50px 50px;
+	background-position:50px 0px;
+	position: relative;
+	top: -50px;
+	left:60px;
+}
+
+
+.grid{
+	width:100%;
+	text-align:center;
+}
+.grid h2 {
+	font-size:20px;
+	margin:30px 0 12px;
+}
+
+.grid p {
+	color:#999;
+	font-size:14px;
+}
+.grid li {
+	display:block;
+	width:33%;
+	float:left;
+	margin:20px 0;
+}
+
+.top-icon {
+	width:160px;
+	background:#F7F7F7;
+	height:50px;
+	position:absolute;
+	
+}
+.top-icon img {
+	display:block;
+	width:50px;
+	margin:0 auto;
+}
+.grid div {
+	width:158px;
+	height:158px;
+	margin:0 auto;
+	background:#FFF;
+	border:1px #eee solid;
+}
+
+.grid span {
+	display:block;
+	width:60px;
+	height:60px;
+	margin: 50px auto;
+}
+
+.grid li:nth-of-type(1) h2{
+	color:#698dc8;
+}
+.grid li:nth-of-type(2) h2{
+	color:#44b756;
+}
+.grid li:nth-of-type(3) h2{
+	color:#f14066;
+}
+.grid li:nth-of-type(4) h2{
+	color:#f2922a;
+}
+.grid li:nth-of-type(5) h2{
+	color:#2bbdb3;
+}
+.grid li:nth-of-type(6) h2{
+	color:#efc416;
+}
+
+
+.comment {
+	height:650px;
+}
+.play {
+	min-width:1260px;
+	overflow:hidden;
+	position:relative;
+	margin-top:50px;
+}
+.btnbox {
+	width:1260px;
+	height:50px;
+	margin:0 auto;
+}
+.play ul {
+	width:2100px;
+	height:386px;
+	position:relative;
+	transition:0.8s;
+}
+.play ul>li{
+	width:280px;
+	height:386px;
+	float:left;
+	margin-left:20px;
+	opacity:0.3;
+}
+.play li.at {
+	opacity:1;
+}
+.on {
+	display:none;
+}
+.at .on {
+	display:block;
+}
+#prev,#next {
+	display:block;
+	width:40px;
+	height:40px;
+	font-size:32px;
+	line-height:40px;
+	text-align:center;
+	color:#FFF;
+	text-decoration:none;
+	border:2px solid #FFF;
+	border-radius:20px;
+	position:relative;
+	bottom:220px;
+	
+}
+#prev {
+	float:left;
+	left:100px;
+}
+#next {
+	float:right;
+	right:100px;
+}
+
+
+
+
+.play li:nth-of-type(1){
+	background: linear-gradient(45deg,#3e84bd,#5dabea);
+}
+.play li:nth-of-type(2){
+	background: linear-gradient(45deg,#5574b9,#7da7d9);
+	
+}
+.play li:nth-of-type(3){
+	background: linear-gradient(45deg,#eb3748,#f74982);
+}
+.play li:nth-of-type(4){
+	background: linear-gradient(45deg,#eb7a00,#f7a751);
+}
+.play li:nth-of-type(5){
+	background: linear-gradient(45deg,#eb3748,#f74982);
+}
+.play li:nth-of-type(6){
+	background: linear-gradient(45deg,#1bbbb4,#82caaf);
+}
+.play li:nth-of-type(7){
+	background: linear-gradient(45deg,#ebbc00,#f7d32d);
+}
+
+.comment span {
+	display: block;
+	margin: 20px 0;
+	text-align: center;
+	line-height:30px;
+	font-size: 20px;
+	color: #FFF;
+}
+.comment li:nth-of-type(1) span:before{
+	background: url(../images/com_1.png);
+	background-size: cover;
+}
+.comment li:nth-of-type(2) span:before{
+	background: url(../images/com_2.png);
+	background-size: cover;
+}
+.comment li:nth-of-type(3) span:before{
+	background: url(../images/com_3.png);
+	background-size: cover;
+}
+.comment li:nth-of-type(4) span:before{
+	background: url(../images/com_4.png);
+	background-size: cover;
+}
+.comment li:nth-of-type(5) span:before{
+	background: url(../images/com_5.png);
+	background-size: cover;
+}
+.comment li:nth-of-type(6) span:before{
+	background: url(../images/com_6.png);
+	background-size: cover;
+}
+.comment li:nth-of-type(7) span:before{
+	background: url(../images/com_7.png);
+	background-size: cover;
+}
+.comment  span:before {
+	content: " ";
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+}
+.comment p {
+	font-size:14px;
+	color:#FFF;
+	font-weight:200;
+	margin-left:30px;
+}
+.comment p:before {
+	background: url(../images/up.png);
+	margin-bottom:10px;
+}
+.comment p:after {
+	background: url(../images/down.png);
+	float:right;
+	position:relative;
+	top: 20px;
+	right: 30px;
+}
+.comment p:before,.comment p:after {
+	content: " ";
+	display: block;
+	width: 26px;
+	height: 26px;
+	background-size: cover;
+}
+
+.assets ul li{
+	position:absolute;
+	top:200px;
+	left:200px;
+	transition:0.5s;
+}
+
+.small-icon:before {
+	content: " ";
+	display: block;
+	width: 460px;
+	height:500px;
+	background: url(../images/bg_c.png);
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	left: -50px;
+}
+.small-icon:after {
+	content: " ";
+	display: block;
+	width: 230px;
+	height: 468px;
+	background: url(../images/bg_ios.png);
+	background-size: cover;
+	position: absolute;
+	top: 40px;
+	left: 110px;
+}
+.small-icon li {
+	top:166px;
+	left:200px;
+	width:33px;
+	height:33px;
+}
+
+.small-icon .icon-0 {
+	top:100px;
+	left:50px;
+	height: 38px;
+	width:27px;
+}
+
+.small-icon .icon-1 {
+	top: 230px;
+	left:-20px;
+	
+}
+.small-icon .icon-2 {
+	top: 270px;
+	left: 60px;
+	width:28px;
+	height: 24px;
+}
+.small-icon .icon-3{
+	width: 34px;
+	height: 29px;
+	top: 400px;
+	left: 24px;
+}
+.small-icon .icon-4{
+	width: 33px;
+	height: 27px;
+	top: 100px;
+	left: 406px;
+}
+.small-icon .icon-5 {
+	width: 33px;
+	height: 33px;
+	top: 170px;
+	left: 360px;
+}
+.small-icon .icon-6{
+	width: 32px;
+	height: 26px;
+	top: 230px;
+	left: 470px;
+}
+.small-icon .icon-7{
+	width: 33px;
+	height: 33px;
+	top: 300px;
+	left: 400px;
+}
+.small-icon .icon-8{
+	width: 37px;
+	height: 28px;
+	top: 400px;
+	left: 440px;
+}
+.four-icon li {
+	width:50px;
+	height:50px;
+	text-align:center;
+	position:absolute;
+	top:200px;
+	right:100px;
+	transition:0.5s;
+}
+.four-icon:before {
+	content: " ";
+	display: block;
+	width: 546px;
+	height: 546px;
+	background: url(../images/bg_o.png);
+	background-size: cover;
+	position: absolute;
+	right:-90px;
+	top: -20px;
+}
+.four-icon:after {
+	content: " ";
+	display: block;
+	width: 332px;
+	height: 534px;
+	background: url(../images/bg_ios_6.png);
+	background-size: cover;
+	position: absolute;
+	right: 0px;
+}
+.four-icon p{
+	font-size:16px;
+	color:#777;
+	margin-top:56px;
+}
+.four-icon li:nth-of-type(3) p{
+	width:66px;
+	position:relative;
+	left: -6px;
+}
+.four-icon .icon-2-0 {
+	top:52px;
+	right:192px;
+}
+.four-icon .icon-2-1 {
+	top:102px;
+	right:273px;
+}
+.four-icon .icon-2-2 {
+	top:190px;
+	right:320px;
+	
+}
+.four-icon .icon-2-3 {
+	top:304px;
+	right:349px;
+}
+
+
+

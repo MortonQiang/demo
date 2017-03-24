@@ -1,0 +1,53 @@
+.time ul, .time li {
+	float:left;
+}
+
+.time ul li:nth-of-type(2){
+	margin-left:60px;
+}
+.time ul li:nth-of-type(3){
+	margin-left:70px;
+}
+.time ul li:nth-of-type(4){
+	margin-left:240px;
+}
+.line li {
+	width:10px;
+	height:10px;
+	border-radius:5px;
+	
+}
+.one {
+	background:#50D294;
+}
+.one:after {
+	content:" ";
+	overflow:hidden;
+	display:block;
+	width:60px;
+	height:4px;
+	position:relative;
+	background:#F58E69;
+}
+.two{
+	background:#6DBEF0;
+}
+.three{
+	background:#F58E69;
+}
+.four{
+	background:#FF581D;
+}
+
+
+.axis {
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>网易有钱</title>
+	<link href="../css/main.css" type="text/css" rel="stylesheet">
+	<link href="licai.css" type="text/css" rel="stylesheet">
+	<script>
+	window.onload = function() {
+            var list = document.getElementById('list');
+			var lists = list.getElementsByTagName('li');
+			var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+			var buttons = document.getElementById('buttons').getElementsByTagName('span');
+			var index = 1;
+
+			function liShow() {
+                for (var i = 0; i < lists.length; i++) {
+                    if (lists[i].className == 'at') {
+                        lists[i].className = '';
+                    }
+                }
+                lists[index - 1].className = 'at';
+				
+            }
+			function buttonsShow() {
+                for (var i = 0; i < buttons.length; i++) {
+                    if (buttons[i].className == 'in') {
+                        buttons[i].className = '';
+                    }
+                }
+                buttons[index - 1].className = 'in';
+            }
+            prev.onclick = function() {   
+				
+                index -= 1;
+                if (index < 1) {
+                    index = 3;
+                }
+                liShow();
+				buttonsShow();
+				
+            }
+            next.onclick = function() {  
+				
+                index += 1;
+                if (index > 3) {
+                    index = 1;
+                }
+                liShow();
+				buttonsShow();
+            }
+			function play() {
+				timer = setInterval(function () {
+					next.onclick()
+				}, 3000);
+			}
+			
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].onmouseover = function () {
+					clearTimeout(timer);
+					var myIndex = parseInt(this.getAttribute('index'));
+					index = myIndex;   
+					buttonsShow();
+					liShow();
+					
+				}
+				buttons[i].onmouseout = function(){
+					play();
+				}
+			}
+			play();
+			function setImg(arr,str){
+			for( var i=0;i<arr.length;i++){
+				arr[i].style.background = "url(images/" + str + (i+1) +".png)";
+				arr[i].style.backgroundSize = "cover";
+			}
+			}
+			var parters = document.getElementById('parter').getElementsByTagName('li');
+			setImg(parters,"part_");
+			
+			
+		
+	}
+	</script>
+  </head>
+  
+  <body>
+    <div class="nav">
+	  <div class="box">
+	    <a href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
+		<ul>
+		  <li><a href="../index.html">首页</a></li>
+		  <li class="active"><a href="#">理财</a></li>
+		  <li><a href="../funds/topic.html">基金</a></li>
+		  <li><a href="../faq.html">常见问题</a></li>
+		  <li><a href="../login.html">我的有钱</a></li>
+		</ul>
+	  </div>
+	</div>
+	<div id="container">
+        <ul id="list">
+          <li class="at"><img src="images/bg_1.jpg" alt="1" /></li>
+          <li><img src="images/bg_2.jpg" alt="2" /></li>
+          <li><img src="images/bg_3.jpg" alt="3" /></li>
+         </ul>
+         <div id="buttons">
+             <span index="1" class="in"></span>
+             <span index="2"></span>
+             <span index="3"></span>
+         </div>
+         <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+         <a href="javascript:;" id="next" class="arrow">&gt;</a>
+    
+	</div>
+	
+	<div class="grild">
+	  <div class="box">
+	    <div class="box1 fl">
+		  <div class="box_left fl">
+		    <h1>定期·财通月月福A2</h1>
+		    <p class="num"><span>4.00</span>%<p>
+		    <p>预期年化收益率<p>
+		    <p class="last">每月可取一次<p>
+		  </div>
+		  <div class="box_right fl">
+		    <p>28天定活两便理财产品</p>
+		    <p>更灵活的理财产品，收益有保障</p>
+		    <a href="detail.html" class="btn">查看详情</a>
+		  </div>
+		</div>
+		<div class="box2 fl">
+		  <p>下载APP，购买理财产品 <br />随时随地查看收益</p>
+		  <img src="images/phone.png" />
+		</div>
+		<div class="box1 box3 fl">
+		  <div class="box_left fl">
+		    <h1>定期·稳盈365</h1>
+		    <p class="num"><span>4.80</span>%<p>
+		    <p>历史结算年化收益率<p>
+		    <p class="last">理财期限365天<p>
+		  </div>
+		  <div class="box_right fl">
+		    <p>同类中收益更高的一年期理财产品</p>
+		    <p>保监会监管，本息有保障，拒绝P2P依然高收益</p>
+		    <a href="detail_2.html" class="btn">查看详情</a>
+		  </div>
+		</div>
+		<div class="box2 fl faq">
+		  <h2>常见问题</h2>
+		  <a href="../faq.html" id="more">更多&gt;</a>
+		  <a href="../faq.html#link"><span></span>有钱的理财交易是否有保障？</a>
+		  <a href="../faq.html"><span></span>为什么购买理财产品要实名认证？</a>
+		  <a href="../faq.html"><span></span>如何进行实名认证？</a>
+		  <a href="../faq.html"><span></span>理财账户可以绑定哪些银行卡？</a>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="part">
+	  <div class="box">
+	    <h1><span>-</span>精挑细选的金融合作伙伴<span>-</span></h1>
+		<p>收益更高，期限更灵活，本息有保障</p>
+		<ul id="parter">
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		</ul>
+		<div style="clear:both"></div>
+	  </div>
+	</div>
+	
+	<div class="footer">
+    <div class="box">
+		<ul class="social-soft">
+			<li class="wb">新浪微博
+				<div>微博扫一扫</div>
+			</li>
+			<li class="wx">关注微信公众号
+				<div>微信扫一扫</div>
+			</li>
+			<li class="contact">
+				<span>官方客服</span>
+				<p>联系电话： 0571-89852300</p>
+			</li>
+		</ul>
+        <div class="copyright"> 杭州网易雷火科技有限公司版权所有 © 1997-2017 ICP证浙B2-20090185 丨 <a href="#">关于网易</a> 丨 <a href="#">隐私政策</a></div>
+    </div>
+</div>
+	  
+	</div>
+  </body>
+</html>
